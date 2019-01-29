@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <header>{{ result }}</header>
+    <table>
+        {% for row in game %}
+            <tr>
+                {% for e in row %}
+                    <td>
+                        {% if e %}
+                            {{ e }}
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <footer><a href="{{ url_for('reset') }}">reset</a></footer>
+{% endblock %}

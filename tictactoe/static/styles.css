@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 4px solid black;
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+}
+
+td > a {
+    font-size: 18px;
+}
+
+header, footer {
+    font-family: "Book Antiqua";
+    font-size: 30px;
+}
